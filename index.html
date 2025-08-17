@@ -1,240 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Sreelakshmi Sajeevan - Flutter Developer Portfolio</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-<style>
-  /* Reset & base */
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0; padding: 0;
-    background: #f4f7f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  a {
-    color: #2d89ef;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-
-  /* Header */
-  header {
-    background: linear-gradient(135deg, #2d89ef, #1a5fc4);
-    color: white;
-    padding: 60px 20px 50px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(45,137,239,0.3);
-  }
-  header h1 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 3rem;
-    letter-spacing: 2px;
-  }
-  header p {
-    font-weight: 400;
-    font-size: 1.3rem;
-    margin: 10px 0 0 0;
-    opacity: 0.85;
-  }
-
-  /* Main sections */
-  section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  section h2 {
-    color: #2d89ef;
-    border-bottom: 4px solid #2d89ef;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  /* Lists */
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  li {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-  }
-
-  /* Contact links */
-  .contact-list li a {
-    word-break: break-all;
-  }
-
-  /* Projects - add some subtle style */
-  .projects-list li {
-    padding-left: 15px;
-    border-left: 4px solid #2d89ef;
-    background: #e9f0fc;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-  }
-  .projects-list li:hover {
-    background-color: #d3e2fa;
-  }
-  .projects-list strong {
-    display: block;
-    font-weight: 700;
-    font-size: 1.15rem;
-    margin-bottom: 5px;
-  }
-
-  /* Section divider */
-  .section-divider {
-    height: 1px;
-    background: #ddd;
-    margin: 60px auto;
-    max-width: 900px;
-  }
-
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 20px 10px;
-    background: #2d89ef;
-    color: white;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-  }
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 2.2rem;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sreelakshmi Sajeevan | Flutter Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
     }
-    section {
-      margin: 30px 15px;
-      padding: 20px 15px;
+    .hero {
+      background: linear-gradient(45deg, #6f42c1, #6610f2);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
     }
-    section h2 {
-      font-size: 1.6rem;
+    .hero h1 {
+      font-size: 2.5rem;
     }
-    li {
-      font-size: 1rem;
+    .section-title {
+      margin: 60px 0 30px;
+      text-align: center;
     }
-  }
-</style>
+    .project-card {
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .contact-icons i {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: #6610f2;
+    }
+  </style>
 </head>
 
 <body>
+  <section class="hero">
+    <div class="container">
+      <h1>Sreelakshmi Sajeevan</h1>
+      <p class="lead">Experienced Flutter Developer | 6+ Years | Firebase | REST APIs | UI/UX</p>
+      <a href="mailto:sreelakshmia43@gmail.com" class="btn btn-light mt-3">Contact Me</a>
+    </div>
+  </section>
 
-<header>
-  <h1>Sreelakshmi Sajeevan</h1>
-  <p>Flutter Developer | Mobile App Enthusiast | 6+ Years Experience</p>
-</header>
+  <section class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Experienced Flutter Developer with 6 years of hands-on expertise designing, building, and deploying robust mobile apps for Android and iOS. Proficient in Flutter, Dart, Firebase, REST API integration, and advanced UI/UX. Passionate about clean architecture, reusable code, and performance optimization.
+    </p>
+  </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Passionate mobile app developer with over 6 years of experience building high-quality Flutter applications. Skilled in integrating REST APIs, Firebase services, state management (GetX, BLoC), and delivering pixel-perfect UIs.
-  </p>
-</section>
+  <section class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Finfi Delivery Partner</h5>
+            <p class="card-text">On-demand delivery with wallet, subscriptions, and maps.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Ride Wave</h5>
+            <p class="card-text">Taxi booking app with real-time driver tracking and payments.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Fresh N Fish</h5>
+            <p class="card-text">Seafood ordering app with location services and clean UI.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more project cards here -->
+    </div>
+  </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <ul class="contact-list">
-    <li>Email: <a href="mailto:sreelakshmia43@gmail.com">sreelakshmia43@gmail.com</a></li>
-    <li>Phone (KSA): +966-510046702</li>
-    <li>WhatsApp (India): +91-8129625023</li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/sreelakshmi-sajeevan-754206192" target="_blank" rel="noopener">linkedin.com/in/sreelakshmi-sajeevan</a></li>
-    <li>GitHub: <a href="https://github.com/sreelakshmisajeevan" target="_blank" rel="noopener">github.com/sreelakshmisajeevan</a></li>
-    <li>Permanent Address: Kerala, India</li>
-    <li>Current Location: Al Khobar, Saudi Arabia</li>
-  </ul>
-</section>
+  <section class="container">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:sreelakshmia43@gmail.com">sreelakshmia43@gmail.com</a></p>
+    <p>Phone (KSA): +966-531085618 | WhatsApp: +91-8129625023</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sreelakshmi-sajeevan-754206192" target="_blank">Profile</a></p>
+    <p>GitHub: <a href="https://github.com/sreelakshmisajeevan" target="_blank">@sreelakshmisajeevan</a></p>
+    <div class="contact-icons">
+      <a href="https://www.linkedin.com/in/sreelakshmi-sajeevan-754206192" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sreelakshmisajeevan" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:sreelakshmia43@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
 
-<section id="technical-skills">
-  <h2>Technical Skills</h2>
-
-  <h3>Web Development</h3>
-  <ul>
-    <li><strong>Front-end:</strong> HTML5, CSS3, JavaScript, TypeScript</li>
-    <li><strong>Front-end Frameworks:</strong> Angular 14, Bootstrap 5</li>
-    <li><strong>Others:</strong> AJAX, jQuery</li>
-    <li><strong>Back-end:</strong> JSP, Servlet, Java 8, Java 11, Java 17</li>
-    <li><strong>Back-end Frameworks:</strong> Spring Framework, Spring Boot, Hibernate</li>
-    <li><strong>Web Services:</strong> Microservices, RESTful APIs, SOAP APIs, JSON/XML</li>
-    <li><strong>Database:</strong> MySQL, PostgreSQL</li>
-    <li><strong>Build Tools:</strong> Maven, Gradle</li>
-    <li><strong>Web Server:</strong> Apache Tomcat</li>
-    <li><strong>IDEs:</strong> Eclipse, Visual Studio Code, NetBeans</li>
-    <li><strong>Cloud Tools:</strong> AWS, Microsoft Azure, Google Cloud Platform, Docker, Kubernetes</li>
-  </ul>
-
-  <h3>Mobile App Development</h3>
-  <ul>
-    <li><strong>Languages:</strong> Java, Kotlin, Dart</li>
-    <li><strong>Frameworks & SDKs:</strong> Flutter, Android SDK</li>
-    <li><strong>Databases:</strong> SQLite, Firebase</li>
-    <li><strong>Web Services:</strong> RESTful APIs, JSON/XML, GraphQL</li>
-    <li><strong>Tools & IDEs:</strong> Xcode, Android Studio, Visual Studio Code, Postman, Figma</li>
-    <li><strong>Build Tools:</strong> Gradle</li>
-    <li><strong>Methodologies:</strong> Agile Methodologies</li>
-    <li><strong>Design Principles:</strong> UI/UX Design Principles</li>
-    <li><strong>UI/UX Design & Development:</strong> Jetpack Compose (Android), Material Design (Android), Cupertino Design (iOS), Responsive Design, Pixel-perfect UI</li>
-    <li><strong>Additional Features:</strong> Push Notifications (FCM), Geolocation and Mapping Services, Payment Gateway Integration</li>
-    <li><strong>State Management:</strong> GetX, BLoC, Provider</li>
-    <li><strong>Deployment:</strong> App Store & Play Store Deployment</li>
-    <li><strong>Version Control:</strong> Git, GitHub</li>
-    <li><strong>Testing:</strong> Mantis Bug Tracker</li>
-    <li><strong>CI/CD Tools:</strong> Jenkins, Codemagic, Fastlane</li>
-  </ul>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <ul class="projects-list">
-    <li>
-      <strong>E-Library Flutter App</strong> - A mobile app for reading, uploading, and managing PDF books with subscription features.
-    </li>
-    <li>
-      <strong>Ride Wave Pickup & Drop App</strong> - Flutter app for managing pickups and drops with phone OTP login and real-time tracking.
-    </li>
-    <li>
-      <strong>Flutter Alarm Manager App</strong> - An app to manage and schedule alarms using Flutter Alarm Manager plugin.
-    </li>
-    <li>
-      <strong>E-commerce Mobile Application - Finfi Delivery Partner</strong> - An innovative e-commerce app designed to provide seamless shopping with on-demand delivery, pickup/drop services, subscriptions, and a wallet system. Built with Flutter, Firebase, Razorpay, Google Maps, and MySQL.
-    </li>
-    <li>
-      <strong>Productivity App - SkyVoice Holy Micro</strong> - A productivity app managing SkyVoice Alert LHA 500 and Glassy Guide 400 devices with easy installation and portable functionality.
-    </li>
-    <li>
-      <strong>E-commerce Mobile Application - Fresh N Fish</strong> - A dynamic seafood app offering fresh and sustainable seafood purchases with a market-style user interface for an engaging culinary experience.
-    </li>
-    <li>
-      <strong>E-commerce Mobile Application - Shoeferm</strong> - Premier footwear app built with Flutter delivering a visually stunning and seamless experience for shoe enthusiasts focused on style and performance.
-    </li>
-  </ul>
-</section>
-
-<div class="section-divider"></div>
-
-<footer>
-  <p>© 2025 Sreelakshmi Sajeevan</p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Sreelakshmi Sajeevan | Al Khobar, Saudi Arabia</p>
+  </footer>
 
 </body>
+
 </html>
