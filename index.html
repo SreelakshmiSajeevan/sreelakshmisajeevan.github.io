@@ -92,6 +92,14 @@
       background-color: #0284c7;
       color: #ffffff;
     }
+    /* Profile Image Styling */
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover; /* Ensures non-square images don't stretch */
+      border-radius: 50%; /* Makes it perfectly round */
+      border: 5px solid rgba(255, 255, 255, 0.2); /* A faint white border */
+    }
   </style>
 </head>
 
@@ -116,16 +124,29 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero-header text-center">
+ <!-- Enhanced Hero Section with Profile Image -->
+  <header class="hero-header">
     <div class="container">
-      <h1 class="display-4 hero-title mb-2">Sreelakshmi Sajeevan</h1>
-      <p class="lead hero-subtitle mb-4">
-        Flutter Mobile App Developer | Android &amp; iOS Specialist | Firebase Expert | Java Full Stack
-      </p>
-      <div class="d-flex justify-content-center gap-3 flex-wrap">
-        <a href="#contact" class="btn btn-info text-white fw-semibold px-4 py-2"><i class="fa-solid fa-envelope me-2"></i>Get In Touch</a>
-        <a href="https://github.com/sreelakshmisajeevan" target="_blank" class="btn btn-outline-light px-4 py-2"><i class="fa-brands fa-github me-2"></i>GitHub Profile</a>
+      <div class="row align-items-center text-center text-md-start">
+        
+        <!-- NEW: Profile Image Column -->
+        <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
+<!-- Line 38 modification -->
+<a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-code me-2"></i>Sreelakshmi Sajeevan </a>
+        </div>
+
+        <!-- Modified: Name and Title Column -->
+        <div class="col-12 col-md-9">
+          <h1 class="display-4 hero-title mb-2">Sreelakshmi Sajeevan</h1>
+          <p class="lead hero-subtitle mb-4">
+            Flutter Mobile App Developer | Android &amp; iOS Specialist | Firebase Expert | Java Full Stack
+          </p>
+          <div class="d-flex justify-content-center justify-content-md-start gap-3 flex-wrap">
+            <a href="#contact" class="btn btn-info text-white fw-semibold px-4 py-2"><i class="fa-solid fa-envelope me-2"></i>Get In Touch</a>
+            <a href="https://github.com/sreelakshmisajeevan" target="_blank" class="btn btn-outline-light px-4 py-2"><i class="fa-brands fa-github me-2"></i>GitHub Profile</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>
