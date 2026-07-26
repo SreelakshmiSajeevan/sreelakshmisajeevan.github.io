@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sreelakshmi Sajeevan | Flutter Mobile App Developer</title>
+  <title>Sreelakshmi Sajeevan | Senior Flutter & Java Developer</title>
   
   <!-- Bootstrap 5.3 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      color: #2b2f38;
-      background-color: #f8f9fa;
+      color: #334155;
+      background-color: #f8fafc;
     }
 
-    /* Gradient Hero Header */
+    /* Hero Header */
     .hero-header {
       background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0284c7 100%);
       color: #ffffff;
@@ -33,31 +33,42 @@
     }
 
     .hero-subtitle {
-      color: #93c5fd;
-      font-weight: 400;
-      max-width: 800px;
-      margin: 0 auto;
+      color: #38bdf8;
+      font-weight: 500;
+      max-width: 850px;
+    }
+
+    .badge-info-pill {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #f8fafc;
+      font-weight: 500;
+      padding: 0.5em 1em;
+      border-radius: 50px;
+      font-size: 0.85rem;
     }
 
     /* Cards & Hover Effects */
     .custom-card {
-      border: none;
+      border: 1px solid #e2e8f0;
       border-radius: 12px;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
       background: #ffffff;
     }
 
     .custom-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06) !important;
     }
 
-    /* Badges */
+    /* Tech Badges */
     .badge-tech {
-      background-color: #e0f2fe;
+      background-color: #f0f9ff;
       color: #0369a1;
-      font-weight: 600;
-      padding: 0.4em 0.8em;
+      border: 1px solid #bae6fd;
+      font-weight: 500;
+      padding: 0.35em 0.75em;
       border-radius: 6px;
       font-size: 0.8rem;
     }
@@ -73,33 +84,38 @@
     .section-title::after {
       content: '';
       display: block;
-      width: 50px;
+      width: 45px;
       height: 4px;
       background: #0284c7;
       border-radius: 2px;
       margin-top: 8px;
     }
 
-    /* Nav Tabs */
-    .nav-pills .nav-link {
-      color: #475569;
-      font-weight: 600;
-      border-radius: 20px;
-      padding: 8px 20px;
-    }
-
-    .nav-pills .nav-link.active {
-      background-color: #0284c7;
-      color: #ffffff;
-    }
-
     /* Profile Image Styling */
     .profile-img {
-      width: 180px;
-      height: 180px;
+      width: 170px;
+      height: 170px;
       object-fit: cover;
       border-radius: 50%;
-      border: 5px solid rgba(255, 255, 255, 0.2);
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .timeline-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    a.contact-link {
+      color: inherit;
+      text-decoration: none;
+    }
+    a.contact-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -109,39 +125,50 @@
   <!-- Sticky Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
     <div class="container">
-    
+      <a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-code text-info me-2"></i>Sreelakshmi S.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#summary">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Header -->
   <header class="hero-header">
     <div class="container">
       <div class="row align-items-center text-center text-md-start">
         
         <!-- Profile Image Column -->
         <div class="col-12 col-md-3 text-center mb-4 mb-md-0">
-          <img src="profile.png" alt="Sreelakshmi Sajeevan" class="profile-img shadow" />
+          <img src="profile.jpg" alt="Sreelakshmi Sajeevan" class="profile-img shadow" />
         </div>
 
         <!-- Name and Title Column -->
         <div class="col-12 col-md-9">
-          <h1 class="display-4 hero-title mb-2">Sreelakshmi Sajeevan</h1>
-          <p class="lead hero-subtitle mb-4">
-            Flutter Mobile App Developer | Android &amp; iOS Specialist | Firebase Expert | Java Full Stack
+          <h1 class="display-4 hero-title mb-1">Sreelakshmi Sajeevan</h1>
+          <p class="fs-5 hero-subtitle mb-3">
+            Senior Flutter &amp; Java Full Stack Developer <span class="text-white-50">| 6 Years Experience</span>
           </p>
+
+          <!-- Quick Info Pills -->
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start mb-4">
+            <span class="badge-info-pill"><i class="fa-solid fa-location-dot me-1"></i>Al Khobar, Saudi Arabia</span>
+            <span class="badge-info-pill"><i class="fa-solid fa-id-card me-1"></i>Iqama Transferable</span>
+            <span class="badge-info-pill"><i class="fa-solid fa-flag me-1"></i>Indian National</span>
+          </div>
+
           <div class="d-flex justify-content-center justify-content-md-start gap-3 flex-wrap">
-            <a href="#contact" class="btn btn-info text-white fw-semibold px-4 py-2"><i class="fa-solid fa-envelope me-2"></i>Get In Touch</a>
-            <a href="https://github.com/sreelakshmisajeevan" target="_blank" class="btn btn-outline-light px-4 py-2"><i class="fa-brands fa-github me-2"></i>GitHub Profile</a>
+            <a href="#contact" class="btn btn-info text-white fw-semibold px-4 py-2"><i class="fa-solid fa-paper-plane me-2"></i>Contact Me</a>
+            <a href="https://github.com/sreelakshmisajeevan" target="_blank" class="btn btn-outline-light px-4 py-2"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+            <a href="https://www.linkedin.com/in/sreelakshmi-sajeevan-754206192" target="_blank" class="btn btn-outline-light px-4 py-2"><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</a>
           </div>
         </div>
 
@@ -155,82 +182,77 @@
     <section id="summary" class="mb-5">
       <div class="p-4 p-md-5 rounded-4 bg-white shadow-sm border">
         <h2 class="section-title">Career Summary</h2>
-        <p class="lead text-secondary fs-5 mb-0">
-          Dedicated <strong>Flutter Mobile App Developer</strong> with professional experience building high-performance cross-platform mobile applications for Android &amp; iOS. Specializing in scalable architecture (Clean Architecture, BLoC, GetX), seamless API integrations, and robust Firebase backends.
+        <p class="lead text-secondary fs-6 mb-0 lh-lg">
+          Experienced Software Developer with <strong>6 years of expertise</strong>, specializing in cross-platform <strong>Flutter</strong> development (Android &amp; iOS) and <strong>Java Full Stack</strong> backend engineering. Proven track record in state management (GetX, BLoC), Firebase ecosystems, RESTful web services, Spring Boot, Microservices, and secure API integrations. Experienced in deploying live apps to the Play Store and App Store, building BI dashboards (Power BI), and managing cloud infrastructure (AWS). Dedicated to clean architecture, modular code, and high-performance cross-domain solutions.
         </p>
       </div>
     </section>
 
-    <!-- Technical Skills -->
-    <section id="skills" class="mb-5">
-      <h2 class="section-title">Technical Skills</h2>
-      <div class="row g-4">
+    <!-- Work Experience Timeline -->
+    <section id="experience" class="mb-5">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="p-4 p-md-5 bg-white rounded-4 shadow-sm border">
         
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 custom-card shadow-sm p-3">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="fa-solid fa-mobile-screen me-2"></i>Mobile Development</h5>
-              <hr />
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge badge-tech">Flutter</span>
-                <span class="badge badge-tech">Dart</span>
-                <span class="badge badge-tech">Android (Java)</span>
-                <span class="badge badge-tech">iOS</span>
-                <span class="badge badge-tech">Cross-Platform</span>
-              </div>
+        <!-- Freelance Role -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="timeline-icon bg-info text-white me-3">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="w-100">
+            <div class="d-flex justify-content-between align-items-start flex-wrap">
+              <h4 class="mb-0 fw-bold">Freelance Flutter &amp; Java Developer</h4>
+              <span class="badge bg-light text-dark border">Nov 2024 – Present</span>
             </div>
+            <p class="text-info fw-semibold mb-2">Remote (Global Clients / Upwork)</p>
+            <ul class="text-secondary ps-3 mb-0">
+              <li>Delivering end-to-end client solutions in Flutter mobile frontend and Java backend engineering.</li>
+              <li>Building data analytics dashboards with Power BI, Firebase, and SQL.</li>
+              <li>Developing RESTful APIs and deploying scalable microservices on AWS.</li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 custom-card shadow-sm p-3">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="fa-solid fa-layer-group me-2"></i>State &amp; Architecture</h5>
-              <hr />
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge badge-tech">GetX</span>
-                <span class="badge badge-tech">BLoC</span>
-                <span class="badge badge-tech">Provider</span>
-                <span class="badge badge-tech">Clean Architecture</span>
-                <span class="badge badge-tech">MVVM / MVC</span>
-              </div>
+        <hr class="my-4" />
+
+        <!-- Spectrum Softtech -->
+        <div class="d-flex align-items-start mb-4">
+          <div class="timeline-icon bg-primary text-white me-3">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <div class="w-100">
+            <div class="d-flex justify-content-between align-items-start flex-wrap">
+              <h4 class="mb-0 fw-bold">Senior Android &amp; Flutter Developer</h4>
+              <span class="badge bg-light text-dark border">Oct 2019 – Nov 2024</span>
             </div>
+            <p class="text-primary fw-semibold mb-2">Spectrum Softtech Solutions Pvt Ltd, Kochi, India</p>
+            <ul class="text-secondary ps-3 mb-0">
+              <li>Engineered production-ready cross-platform mobile apps using Flutter and native Android (Java/Kotlin).</li>
+              <li>Built scalable backend services using Spring Boot integrated with MySQL and PostgreSQL databases.</li>
+              <li>Integrated Firebase (Auth, Firestore, FCM), Google Maps API, and payment gateways (RazorPay, UPI).</li>
+              <li>Architected clean code applications using GetX, Provider, and BLoC state management models.</li>
+              <li>Configured CI/CD pipelines via Jenkins, Docker, and Codemagic in an Agile Jira environment.</li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 custom-card shadow-sm p-3">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="fa-solid fa-cloud-bolt me-2"></i>Backend &amp; Cloud</h5>
-              <hr />
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge badge-tech">Firebase Auth</span>
-                <span class="badge badge-tech">Firestore</span>
-                <span class="badge badge-tech">Cloud Storage</span>
-                <span class="badge badge-tech">Push Notifications</span>
-                <span class="badge badge-tech">RESTful APIs</span>
-                <span class="badge badge-tech">MySQL</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <hr class="my-4" />
 
-        <div class="col-md-12 col-lg-12">
-          <div class="card custom-card shadow-sm p-3">
-            <div class="card-body">
-              <h5 class="card-title text-primary"><i class="fa-solid fa-screwdriver-wrench me-2"></i>Tools, CI/CD &amp; Analytics</h5>
-              <hr />
-              <div class="d-flex flex-wrap gap-2">
-                <span class="badge badge-tech">App Store Connect</span>
-                <span class="badge badge-tech">Google Play Console</span>
-                <span class="badge badge-tech">GitHub Actions</span>
-                <span class="badge badge-tech">Git / GitLab</span>
-                <span class="badge badge-tech">Android Studio</span>
-                <span class="badge badge-tech">VS Code</span>
-                <span class="badge badge-tech">Figma</span>
-                <span class="badge badge-tech">Power BI</span>
-              </div>
+        <!-- Syntax Soft Tech -->
+        <div class="d-flex align-items-start">
+          <div class="timeline-icon bg-secondary text-white me-3">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="w-100">
+            <div class="d-flex justify-content-between align-items-start flex-wrap">
+              <h4 class="mb-0 fw-bold">Android Developer Intern</h4>
+              <span class="badge bg-light text-dark border">Apr 2019 – Sept 2019</span>
             </div>
+            <p class="text-secondary fw-semibold mb-2">Syntax Soft Tech, Kochi, India</p>
+            <ul class="text-secondary ps-3 mb-0">
+              <li>Developed native Android apps implementing MVVM architecture and Android Jetpack components.</li>
+              <li>Integrated Firebase services, Room Database, and RESTful web APIs.</li>
+              <li>Maintained app builds and published client releases to the Google Play Store.</li>
+            </ul>
           </div>
         </div>
 
@@ -239,9 +261,7 @@
 
     <!-- Projects Section -->
     <section id="projects" class="mb-5">
-      <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
-        <h2 class="section-title mb-0">Featured Projects</h2>
-      </div>
+      <h2 class="section-title">Featured Projects</h2>
 
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         
@@ -249,14 +269,15 @@
         <div class="col">
           <div class="card h-100 custom-card shadow-sm border-top border-4 border-info">
             <div class="card-body d-flex flex-column">
-              <span class="badge bg-light text-dark align-self-start mb-2 border">E-Commerce</span>
+              <span class="badge bg-light text-dark align-self-start mb-2 border">E-Commerce &amp; Logistics</span>
               <h5 class="card-title fw-bold">Finfi Delivery Partner</h5>
-              <p class="card-text text-secondary flex-grow-1">On-demand logistics &amp; delivery app featuring live tracking, pickup/drop workflows, in-app wallet, and subscriptions.</p>
+              <p class="card-text text-secondary flex-grow-1">On-demand delivery platform featuring live tracking, pickup/drop workflows, in-app wallet, and subscription services.</p>
               <div class="mt-3">
                 <small class="text-muted d-block mb-1 fw-semibold">Tech Stack:</small>
                 <span class="badge bg-secondary">Flutter</span>
                 <span class="badge bg-secondary">Firebase</span>
                 <span class="badge bg-secondary">RazorPay</span>
+                <span class="badge bg-secondary">MySQL</span>
                 <span class="badge bg-secondary">Google Maps</span>
               </div>
             </div>
@@ -267,12 +288,11 @@
         <div class="col">
           <div class="card h-100 custom-card shadow-sm border-top border-4 border-primary">
             <div class="card-body d-flex flex-column">
-              <span class="badge bg-light text-dark align-self-start mb-2 border">Productivity / Hardware</span>
+              <span class="badge bg-light text-dark align-self-start mb-2 border">Productivity &amp; Hardware</span>
               <h5 class="card-title fw-bold">SkyVoice Holy Micro</h5>
-              <p class="card-text text-secondary flex-grow-1">Companion app supporting SkyVoice Alert LHA &amp; Glassy Guide hardware series. Published live on stores.</p>
-              <div class="mt-3">
-                <small class="text-muted d-block mb-1 fw-semibold">Platform &amp; Status:</small>
-                <span class="badge bg-success"><i class="fa-brands fa-apple me-1"></i>App Store</span>
+              <p class="card-text text-secondary flex-grow-1">Hardware companion app supporting SkyVoice Alert LHA &amp; Glassy Guide Series hardware devices.</p>
+              <div class="mt-3 mb-2">
+                <span class="badge bg-success me-1"><i class="fa-brands fa-apple me-1"></i>App Store</span>
                 <span class="badge bg-success"><i class="fa-brands fa-google-play me-1"></i>Play Store</span>
               </div>
             </div>
@@ -283,9 +303,9 @@
         <div class="col">
           <div class="card h-100 custom-card shadow-sm border-top border-4 border-info">
             <div class="card-body d-flex flex-column">
-              <span class="badge bg-light text-dark align-self-start mb-2 border">E-Commerce</span>
+              <span class="badge bg-light text-dark align-self-start mb-2 border">Transportation</span>
               <h5 class="card-title fw-bold">Trip Book</h5>
-              <p class="card-text text-secondary flex-grow-1">Online taxi booking platform with real-time driver navigation, automated fare calculation, and secure OTP authentication.</p>
+              <p class="card-text text-secondary flex-grow-1">Online taxi booking system with OTP login, real-time driver navigation, fare estimation, and secure payments.</p>
               <div class="mt-3">
                 <small class="text-muted d-block mb-1 fw-semibold">Tech Stack:</small>
                 <span class="badge bg-secondary">Flutter</span>
@@ -301,8 +321,8 @@
           <div class="card h-100 custom-card shadow-sm border-top border-4 border-info">
             <div class="card-body d-flex flex-column">
               <span class="badge bg-light text-dark align-self-start mb-2 border">E-Commerce</span>
-              <h5 class="card-title fw-bold">Fresh N Fish</h5>
-              <p class="card-text text-secondary flex-grow-1">Seafood delivery application offering real-time location targeting and a clean modern ordering interface.</p>
+              <h5 class="card-title fw-bold">FishSave</h5>
+              <p class="card-text text-secondary flex-grow-1">Seafood e-commerce mobile application offering real-time location services and an ordering UI.</p>
               <div class="mt-3">
                 <small class="text-muted d-block mb-1 fw-semibold">Tech Stack:</small>
                 <span class="badge bg-secondary">Flutter</span>
@@ -315,15 +335,15 @@
 
         <!-- Project 5 -->
         <div class="col">
-          <div class="card h-100 custom-card shadow-sm border-top border-4 border-warning">
+          <div class="card h-100 custom-card shadow-sm border-top border-4 border-info">
             <div class="card-body d-flex flex-column">
-              <span class="badge bg-light text-dark align-self-start mb-2 border">Enterprise</span>
-              <h5 class="card-title fw-bold">Leave Manager</h5>
-              <p class="card-text text-secondary flex-grow-1">Enterprise organizational application facilitating leave requests, approvals, and workflow management.</p>
+              <span class="badge bg-light text-dark align-self-start mb-2 border">E-Commerce</span>
+              <h5 class="card-title fw-bold">Shoeferm</h5>
+              <p class="card-text text-secondary flex-grow-1">Footwear e-commerce mobile experience with modern catalog browsing and checkout workflows.</p>
               <div class="mt-3">
                 <small class="text-muted d-block mb-1 fw-semibold">Tech Stack:</small>
                 <span class="badge bg-secondary">Flutter</span>
-                <span class="badge bg-secondary">REST APIs</span>
+                <span class="badge bg-secondary">UI/UX</span>
               </div>
             </div>
           </div>
@@ -331,15 +351,15 @@
 
         <!-- Project 6 -->
         <div class="col">
-          <div class="card h-100 custom-card shadow-sm border-top border-4 border-danger">
+          <div class="card h-100 custom-card shadow-sm border-top border-4 border-warning">
             <div class="card-body d-flex flex-column">
-              <span class="badge bg-light text-dark align-self-start mb-2 border">Utility &amp; Safety</span>
-              <h5 class="card-title fw-bold">mSaver</h5>
-              <p class="card-text text-secondary flex-grow-1">Emergency location-sharing and notification application built for user safety.</p>
+              <span class="badge bg-light text-dark align-self-start mb-2 border">B2B Portal</span>
+              <h5 class="card-title fw-bold">TravelTrolley</h5>
+              <p class="card-text text-secondary flex-grow-1">Exclusive authorized Android phone application for travel agents and ticket booking management.</p>
               <div class="mt-3">
                 <small class="text-muted d-block mb-1 fw-semibold">Tech Stack:</small>
                 <span class="badge bg-secondary">Flutter</span>
-                <span class="badge bg-secondary">GPS Location</span>
+                <span class="badge bg-secondary">Google Maps</span>
               </div>
             </div>
           </div>
@@ -347,12 +367,12 @@
 
       </div>
 
-      <!-- Expandable Accordion for remaining projects -->
+      <!-- Accordion for remaining 6 projects -->
       <div class="accordion mt-4" id="moreProjectsAccordion">
         <div class="accordion-item custom-card overflow-hidden">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMore">
-              <i class="fa-solid fa-list-check me-2 text-primary"></i> View Additional Apps (Shoeferm, TravelTrolley, Petshop, iDownloadCalc &amp; More)
+              <i class="fa-solid fa-layer-group me-2 text-primary"></i> View Additional Apps (Petshop, mSaver, Leave Manager, iDownloadCalc &amp; More)
             </button>
           </h2>
           <div id="collapseMore" class="accordion-collapse collapse" data-bs-parent="#moreProjectsAccordion">
@@ -361,47 +381,47 @@
                 <table class="table table-hover align-middle">
                   <thead class="table-light">
                     <tr>
-                      <th>Project Name</th>
-                      <th>Category</th>
-                      <th>Description</th>
-                      <th>Stack</th>
+                      <th>Project</th>
+                      <th>Domain</th>
+                      <th>Overview</th>
+                      <th>Tech Stack</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="fw-bold">Shoeferm</td>
-                      <td>E-Commerce</td>
-                      <td>Footwear shopping application with tailored modern UI/UX.</td>
-                      <td><span class="badge bg-secondary">Flutter</span></td>
-                    </tr>
-                    <tr>
-                      <td class="fw-bold">TravelTrolley</td>
-                      <td>B2B Travel</td>
-                      <td>Exclusive Android portal designed for authorized travel agents.</td>
-                      <td><span class="badge bg-secondary">Flutter, Google Maps</span></td>
-                    </tr>
-                    <tr>
                       <td class="fw-bold">Petshop</td>
-                      <td>E-Commerce</td>
-                      <td>Seller platform for managing animal listings and store inventories.</td>
-                      <td><span class="badge bg-secondary">Java</span></td>
+                      <td>Marketplace</td>
+                      <td>Seller app for listing and managing animals and pet care supplies.</td>
+                      <td><span class="badge bg-secondary">Java, Android</span></td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">mSaver</td>
+                      <td>Emergency Safety</td>
+                      <td>Location-sharing emergency app sending periodic SMS alerts with GPS positions.</td>
+                      <td><span class="badge bg-secondary">Flutter, Background Services</span></td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold">Leave Manager</td>
+                      <td>Enterprise Workflow</td>
+                      <td>Internal organization tool for leave submissions, holiday tracking, and approval flows.</td>
+                      <td><span class="badge bg-secondary">Flutter, REST APIs</span></td>
                     </tr>
                     <tr>
                       <td class="fw-bold">iDownloadCalc</td>
-                      <td>Utility</td>
-                      <td>Calculates download and upload durations based on internet speeds.</td>
-                      <td><span class="badge bg-secondary">iOS</span></td>
+                      <td>iOS Utility</td>
+                      <td>Utility estimating file upload/download durations based on speed and file size.</td>
+                      <td><span class="badge bg-secondary">iOS, Swift</span></td>
                     </tr>
                     <tr>
                       <td class="fw-bold">Unit Converter</td>
                       <td>Utility</td>
-                      <td>Fast multi-unit conversion tool with minimal latency.</td>
+                      <td>Multi-unit conversion tool optimized for speed and precise calculations.</td>
                       <td><span class="badge bg-secondary">Flutter</span></td>
                     </tr>
                     <tr>
                       <td class="fw-bold">mQuiz</td>
                       <td>Education</td>
-                      <td>General knowledge quiz application across multiple category channels.</td>
+                      <td>General knowledge quiz app with multi-category channels and expanding questions.</td>
                       <td><span class="badge bg-secondary">Flutter</span></td>
                     </tr>
                   </tbody>
@@ -413,39 +433,98 @@
       </div>
     </section>
 
-    <!-- Work Experience Timeline -->
-    <section id="experience" class="mb-5">
-      <h2 class="section-title">Work Experience</h2>
-      <div class="p-4 bg-white rounded-4 shadow-sm border">
+    <!-- Technical Skills Breakdown -->
+    <section id="skills" class="mb-5">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="row g-4">
         
-        <div class="d-flex align-items-start mb-4">
-          <div class="bg-primary text-white rounded-circle p-3 me-3">
-            <i class="fa-solid fa-briefcase fa-lg"></i>
-          </div>
-          <div>
-            <h4 class="mb-1 fw-bold">Flutter Developer</h4>
-            <p class="text-primary fw-semibold mb-2">Spectrum Softtech Solutions Pvt Ltd</p>
-            <ul class="text-secondary ps-3 mb-0">
-              <li>Architected and deployed production-ready Flutter applications for cross-industry clients.</li>
-              <li>Collaborated with product teams to define, design, and ship complex core features.</li>
-              <li>Integrated RESTful endpoints, third-party SDKs, and Firebase infrastructure.</li>
-            </ul>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 custom-card p-3">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><i class="fa-solid fa-mobile-screen me-2"></i>Mobile Development</h5>
+              <hr />
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-tech">Flutter (Dart)</span>
+                <span class="badge badge-tech">Android SDK (Java/Kotlin)</span>
+                <span class="badge badge-tech">iOS SDK (Swift)</span>
+                <span class="badge badge-tech">Jetpack Compose</span>
+                <span class="badge badge-tech">GetX / BLoC / Provider</span>
+                <span class="badge badge-tech">Riverpod</span>
+                <span class="badge badge-tech">Platform Channels</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <hr />
-
-        <div class="d-flex align-items-start pt-2">
-          <div class="bg-secondary text-white rounded-circle p-3 me-3">
-            <i class="fa-solid fa-laptop-code fa-lg"></i>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 custom-card p-3">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><i class="fa-solid fa-server me-2"></i>Backend &amp; Web Services</h5>
+              <hr />
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-tech">Core Java (8/11/17)</span>
+                <span class="badge badge-tech">Spring Boot</span>
+                <span class="badge badge-tech">Hibernate / JPA</span>
+                <span class="badge badge-tech">Microservices</span>
+                <span class="badge badge-tech">RESTful APIs / GraphQL</span>
+                <span class="badge badge-tech">Firebase Auth &amp; Firestore</span>
+                <span class="badge badge-tech">FCM Push Notifications</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4 class="mb-1 fw-bold">Flutter Developer Intern</h4>
-            <p class="text-secondary fw-semibold mb-2">Syntax Soft Tech</p>
-            <ul class="text-secondary ps-3 mb-0">
-              <li>Built intuitive cross-platform UI layouts following modern design principles.</li>
-              <li>Assisted senior developers in code refactoring, unit testing, and documentation.</li>
-            </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 custom-card p-3">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><i class="fa-solid fa-database me-2"></i>Databases &amp; Cloud</h5>
+              <hr />
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-tech">MySQL</span>
+                <span class="badge badge-tech">PostgreSQL</span>
+                <span class="badge badge-tech">MongoDB</span>
+                <span class="badge badge-tech">Oracle</span>
+                <span class="badge badge-tech">AWS Cloud</span>
+                <span class="badge badge-tech">Room DB / Core Data</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 custom-card p-3">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><i class="fa-solid fa-code me-2"></i>Frontend &amp; Languages</h5>
+              <hr />
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-tech">Dart</span>
+                <span class="badge badge-tech">Java</span>
+                <span class="badge badge-tech">Kotlin</span>
+                <span class="badge badge-tech">TypeScript</span>
+                <span class="badge badge-tech">JavaScript</span>
+                <span class="badge badge-tech">Angular</span>
+                <span class="badge badge-tech">HTML5 / CSS3 / Bootstrap</span>
+                <span class="badge badge-tech">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 custom-card p-3">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><i class="fa-solid fa-chart-column me-2"></i>DevOps, BI &amp; Tools</h5>
+              <hr />
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge badge-tech">Power BI / Tableau</span>
+                <span class="badge badge-tech">Docker</span>
+                <span class="badge badge-tech">Jenkins / Codemagic</span>
+                <span class="badge badge-tech">Git / GitHub / GitLab</span>
+                <span class="badge badge-tech">Play Console &amp; App Store Connect</span>
+                <span class="badge badge-tech">Postman / Swagger</span>
+                <span class="badge badge-tech">Jira (Agile)</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -455,40 +534,43 @@
     <!-- Education, Languages & Soft Skills -->
     <div class="row g-4 mb-5">
       <div class="col-md-4">
-        <div class="card h-100 custom-card shadow-sm p-3">
+        <div class="card h-100 custom-card p-3">
           <div class="card-body">
             <h5 class="card-title text-primary"><i class="fa-solid fa-graduation-cap me-2"></i>Education</h5>
             <hr />
             <h6 class="fw-bold mb-1">Bachelor of Computer Applications (BCA)</h6>
-            <p class="text-muted small mb-0">Mahatma Gandhi University</p>
+            <p class="text-primary fw-semibold small mb-1">CGPA: 8.38 / 10</p>
+            <p class="text-muted small mb-0">Mahatma Gandhi University (2017 – 2019)</p>
           </div>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="card h-100 custom-card shadow-sm p-3">
+        <div class="card h-100 custom-card p-3">
           <div class="card-body">
             <h5 class="card-title text-primary"><i class="fa-solid fa-language me-2"></i>Languages</h5>
             <hr />
             <ul class="list-unstyled mb-0 text-secondary">
               <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>English</li>
               <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Malayalam</li>
-              <li><i class="fa-solid fa-check text-success me-2"></i>Hindi</li>
+              <li class="mb-1"><i class="fa-solid fa-check text-success me-2"></i>Hindi</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Tamil</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="card h-100 custom-card shadow-sm p-3">
+        <div class="card h-100 custom-card p-3">
           <div class="card-body">
-            <h5 class="card-title text-primary"><i class="fa-solid fa-lightbulb me-2"></i>Soft Skills</h5>
+            <h5 class="card-title text-primary"><i class="fa-solid fa-user-check me-2"></i>Soft Skills</h5>
             <hr />
             <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-light text-dark border">Communication</span>
+              <span class="badge bg-light text-dark border">Problem Solving</span>
               <span class="badge bg-light text-dark border">Team Collaboration</span>
-              <span class="badge bg-light text-dark border">Problem-Solving</span>
               <span class="badge bg-light text-dark border">Time Management</span>
-              <span class="badge bg-light text-dark border">Critical Thinking</span>
+              <span class="badge bg-light text-dark border">Adaptability</span>
             </div>
           </div>
         </div>
@@ -498,25 +580,27 @@
     <!-- Contact Section -->
     <section id="contact" class="mb-4">
       <div class="p-4 p-md-5 rounded-4 bg-dark text-white text-center shadow-lg">
-        <h2 class="fw-bold mb-3">Let's Connect</h2>
-        <p class="text-light mb-4">Interested in collaborating or discussing mobile app development opportunities?</p>
+        <h2 class="fw-bold mb-3">Get In Touch</h2>
+        <p class="text-light mb-4">Located in Al Khobar, Saudi Arabia (Transferable Iqama). Open for full-time and contract opportunities.</p>
         
-        <div class="row g-3 justify-content-center">
+        <div class="row g-3 justify-content-center mb-4">
           <div class="col-auto">
             <a href="mailto:sreelakshmia43@gmail.com" class="btn btn-light px-4 py-2 fw-semibold">
               <i class="fa-solid fa-envelope text-primary me-2"></i>sreelakshmia43@gmail.com
             </a>
           </div>
           <div class="col-auto">
-            <a href="https://github.com/sreelakshmisajeevan" target="_blank" class="btn btn-outline-light px-4 py-2">
-              <i class="fa-brands fa-github me-2"></i>GitHub
+            <a href="https://wa.me/918129625023" target="_blank" class="btn btn-success px-4 py-2 fw-semibold">
+              <i class="fa-brands fa-whatsapp me-2"></i>+91-8129625023
             </a>
           </div>
-          <div class="col-auto">
-            <a href="https://www.linkedin.com/in/sreelakshmi-sajeevan" target="_blank" class="btn btn-outline-light px-4 py-2">
-              <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
-            </a>
-          </div>
+        </div>
+
+        <div class="d-flex justify-content-center flex-wrap gap-4 text-light small">
+          <span><i class="fa-solid fa-phone me-1 text-info"></i>KSA: +966-531085618</span>
+          <span><i class="fa-solid fa-phone me-1 text-info"></i>IN: +91-8129625023</span>
+          <span><a href="https://github.com/sreelakshmisajeevan" target="_blank" class="contact-link text-light"><i class="fa-brands fa-github me-1 text-info"></i>GitHub</a></span>
+          <span><a href="https://www.linkedin.com/in/sreelakshmi-sajeevan-754206192" target="_blank" class="contact-link text-light"><i class="fa-brands fa-linkedin me-1 text-info"></i>LinkedIn</a></span>
         </div>
       </div>
     </section>
